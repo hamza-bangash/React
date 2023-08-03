@@ -1,14 +1,14 @@
-import React from "react"
-import Header from "./component/Header"
-import MainContent from "./component/Main-Content"
-
+import "./App.css";
+import Check from "./component/check.js";
 
 export default function App(){
+
+    let firstName = "Hamza";
+    let secondName = "Khan";
+    let age = 19;
     return(
         <div>
-              <Header/>
-            <MainContent/>
+            <Check firstName={firstName}  secondName={secondName} age={age} />
         </div>
-      
     );
 }
